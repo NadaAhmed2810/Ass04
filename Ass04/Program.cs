@@ -2,8 +2,23 @@
 
 namespace Ass04
 {
+    //class
+    //interface
+    //enum
+    //struct
     internal class Program
     {
+        //function
+        //data
+        // types of function 
+        // 1.class Member funvtion [static function]
+        //2.object member function [non static function
+        //not call because its not in internal point 
+        public static void print(string pattern, int count = 10)
+        {
+            for (int i=0;i<count;i++)
+                Console.WriteLine(pattern);
+        }
         static void Main(string[] args)
         {
 
@@ -96,8 +111,20 @@ namespace Ass04
             //        Console.WriteLine(Emp.department.Name);
             //    }
             //}
-           //Console.WriteLine(Emp?.department.?Name??"Not found");
+            //Console.WriteLine(Emp?.department.?Name??"Not found");
 
+            #endregion
+            #region Functions
+            //passing by order
+           // print(10,"***");
+            //passing by name
+           // print(pattern:"***", count:10);
+            //print("***");
+            //Hello Mostafa 
+            //welcome to              route
+            //Console.WriteLine("Hello Mostafa\nwelcome to\t\t\t\troute");
+            //string path = @"D:\C#Projects\Ass04\Ass04.sln";
+            
             #endregion
         }
     }
