@@ -49,6 +49,18 @@ namespace Assignment
             }
             return sum;
         }
+        public static bool IsPrime(int x)
+        {
+            for (int i = 2;i*i <= x; i++)
+            {
+                if (x % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
         static void Main(string[] args)
         {
             #region Q1: Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
@@ -122,6 +134,13 @@ namespace Assignment
             //Console.Write("Enter Number: ");
             //int Num =int.Parse(Console.ReadLine());
             //Console.WriteLine(CalcSumOfdigits(Num));
+            #endregion
+            #region Q5:Create a function named "IsPrime", which receives an integer number and retuns true if it is prime, or false if it is not:
+            //Console.Write("Enter Number: ");
+            //int Num = int.Parse(Console.ReadLine());
+            //if(IsPrime(Num))
+            //    Console.WriteLine("Number Is Prime ");
+            //else Console.WriteLine("Number Is Not Prime");
             #endregion
 
         }
