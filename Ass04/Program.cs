@@ -59,9 +59,45 @@ namespace Ass04
             // y=x.HasValue ? x.Value : 0;
             #endregion
             #region reference type
-           // string? Name = null;//default
+            // string? Name = null;//default
             //string? Name = null!;
             #endregion
+            #endregion
+            #region Null Propagation Operator
+            //int[] Numbers = null; //{ 1, 2, 3, 4, 5 };
+            //for (int i = 0;Numbers !=null  && i < Numbers.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
+            //check evey time
+            //for (int i = 0;  i < Numbers?.Length; i++)
+            //{
+            //    Console.WriteLine(Numbers[i]);
+            //}
+            //i<Numbers?.length
+            //Numbers=>object [length]
+            //Numbers=>Null[Null]
+            ////best
+            //if(Numbers != null)
+            //{
+            //    for (int i = 0; i < Numbers.Length; i++)
+            //    {
+            //        Console.WriteLine(Numbers[i]);
+            //    }
+            //}
+            //int? Length = Numbers?.Length;
+            //int L=Numbers?.Length??0;
+            //Employee Emp=new Employee();
+            //Emp.department=new Department();
+            //if (Emp != null)
+            //{
+            //    if (Emp.department != null)
+            //    {
+            //        Console.WriteLine(Emp.department.Name);
+            //    }
+            //}
+           //Console.WriteLine(Emp?.department.?Name??"Not found");
+
             #endregion
         }
     }

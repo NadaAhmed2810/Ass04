@@ -10,6 +10,11 @@ namespace Ass04
     {
         public string? Name{  get; set; }
         public int id {  get; set; }
-
+        public Department department { get; set; }
+    }
+    internal class Department
+    {
+        public String Name { get; set; }
+        public int id { get; set; }
     }
 }
