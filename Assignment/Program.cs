@@ -60,7 +60,23 @@ namespace Assignment
             }
             return true;
         }
+        public static int[] GetMinAndMax(ref int[] arr)
+        {
+            int[] a = new int []{ int.MaxValue, int.MinValue };
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] < a[0])
+                {
+                    a[0] = arr[i];
+                }
+                if (arr[i] > a[1])
+                {
+                    a[1] = arr[i];
+                }
+            }
+            return a;
 
+        }
         static void Main(string[] args)
         {
             #region Q1: Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
@@ -142,6 +158,23 @@ namespace Assignment
             //    Console.WriteLine("Number Is Prime ");
             //else Console.WriteLine("Number Is Not Prime");
             #endregion
+            #region Q6:Create a function named MinMaxArray, to return the minimum and maximum values stored in an array, using reference parameters
+            //int size;
+            //bool f = false;
+            //do {
+            //    Console.Write("Enter Size: ");
+            //    f=int.TryParse(Console.ReadLine(), out size);
+            //} while (size >0 && !f);
+            //int[] arr = new int[size];
+            //for (int i = 0; i < size;)
+            //{
+            //    Console.Write($"Enter Element [{i + 1}]:");
+            //    f = int.TryParse(Console.ReadLine(), out arr[i]);
+            //    if (f) i++;
+            //}
+            //int[] a=GetMinAndMax(ref arr);
+            //Console.WriteLine($"Min: {a[0]}\nMax:{a[1]}");
+            #endregion 
 
         }
     }
