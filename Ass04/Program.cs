@@ -19,6 +19,18 @@ namespace Ass04
             for (int i=0;i<count;i++)
                 Console.WriteLine(pattern);
         }
+        //public static void Swap( int x,  int y)
+        //{
+        //    int temp = x;
+        //    x = y;
+        //    y = temp;
+        //}
+        public static void Swap(ref int x,ref int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
         static void Main(string[] args)
         {
 
@@ -116,15 +128,35 @@ namespace Ass04
             #endregion
             #region Functions
             //passing by order
-           // print(10,"***");
+            // print(10,"***");
             //passing by name
-           // print(pattern:"***", count:10);
+            // print(pattern:"***", count:10);
             //print("***");
             //Hello Mostafa 
             //welcome to              route
             //Console.WriteLine("Hello Mostafa\nwelcome to\t\t\t\troute");
             //string path = @"D:\C#Projects\Ass04\Ass04.sln";
-            
+
+            #endregion
+            #region function value parameters
+            #region By value
+            //int x = 10;
+            //int y = 5;
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
+            //Swap( x,  y);
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
+            #endregion
+            #region By reference
+            //int x = 10;
+            //int y = 5;
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
+            //Swap(ref x, ref y);
+            //Console.WriteLine(x);
+            //Console.WriteLine(y);
+            #endregion
             #endregion
         }
     }
