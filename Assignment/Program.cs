@@ -77,6 +77,15 @@ namespace Assignment
             return a;
 
         }
+        public static long factorial(int x)
+        {
+            long f = 1;
+            for(int i = 1; i <= x; i++)
+            {
+                f*= i;
+            }
+            return f;
+        }
         static void Main(string[] args)
         {
             #region Q1: Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
@@ -174,7 +183,15 @@ namespace Assignment
             //}
             //int[] a=GetMinAndMax(ref arr);
             //Console.WriteLine($"Min: {a[0]}\nMax:{a[1]}");
-            #endregion 
+            #endregion
+            #region Q7:Create an iterative (non-recursive) function to calculate the factorial of the number specified as parameter
+            //Console.Write("Enter Number:");
+            //int Num =int.Parse(Console.ReadLine());
+            //if (Num > 0)
+            //{
+            //    Console.WriteLine(factorial(Num));
+            //}
+            #endregion
 
         }
     }
