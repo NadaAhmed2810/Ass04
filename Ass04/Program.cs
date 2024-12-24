@@ -1,4 +1,6 @@
-﻿using System.Security.Cryptography.X509Certificates;
+﻿using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Ass04
 {
@@ -51,6 +53,18 @@ namespace Ass04
                 sum += arr[i];
             }
             return sum;
+        }
+        public static void SumMul(int x,int y,out int sum,out int mul)
+        {
+             sum = x+y;
+             mul = x * y;
+
+        }
+        public static void SumMul1(int x, int y, ref int sum, ref int mul)
+        {
+            sum = x + y;
+            mul = x * y;
+
         }
         static void Main(string[] args)
         {
@@ -179,6 +193,7 @@ namespace Ass04
             //Console.WriteLine(y);
             #endregion
             #endregion
+
             #region reference type parameters
             #region Ex01
             #region By value
@@ -202,11 +217,21 @@ namespace Ass04
             //Console.WriteLine(arr[0]);
             #endregion
             #region by reference
-            int[] arr = { 1, 2, 3 };
-            Console.WriteLine(Sum(ref arr));
-            Console.WriteLine(arr[0]);
+            //int[] arr = { 1, 2, 3 };
+            //Console.WriteLine(Sum(ref arr));
+            //Console.WriteLine(arr[0]);
             #endregion
             #endregion
+            #endregion
+            #region Function Passing by out
+            //int a = 10, b = 20, sum=0, mul=0;
+            //SumMul(10, 20, out sum, out mul);
+            //Console.WriteLine(sum);
+            //Console.WriteLine(mul);
+            //ref input and out paramaters
+            //SumMul1(10, 20, ref sum, ref mul);
+            //Console.WriteLine(sum);
+            //Console.WriteLine(mul);
             #endregion
 
         }
