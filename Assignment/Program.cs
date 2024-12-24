@@ -86,6 +86,17 @@ namespace Assignment
             }
             return f;
         }
+        public static string ChangeChar(string s, int pos, char c)
+        {
+            if (s == null)
+            {
+                throw new ArgumentException("Input string cannot be null or empty.");
+            }
+
+            char[] charArray = s.ToCharArray();
+            charArray[pos] = c;
+            return new string(charArray);
+        }
         static void Main(string[] args)
         {
             #region Q1: Explain the difference between passing (Value type parameters) by value and by reference then write a suitable c# example.
@@ -192,6 +203,29 @@ namespace Assignment
             //    Console.WriteLine(factorial(Num));
             //}
             #endregion
+            #region Q8:Create a function named "ChangeChar" to modify a letter in a certain position (0 based) of a string, replacing it with a different letter
+            //String s = null;
+            //bool f = false;
+            //do
+            //{
+            //    Console.Write("Enter String:");
+            //     s = Console.ReadLine();
+            //} while(s==null);
+            //int pos;
+            //f=false;
+            //do {
+            //    Console.Write("Enter position greater than 0 and less than length of string:");
+            //    f=int.TryParse(Console.ReadLine(), out pos);
+            //} while (!f || pos<0 || pos>s.Length);
+            //char c;
+            //f = false;
+            //do
+            //{
+            //    Console.Write("Enter newchar :");
+            //    f = char.TryParse(Console.ReadLine(),out c);
+            //} while (!f);
+            //Console.WriteLine($"New string :{ChangeChar(s, pos, c)} ");
+            #endregion 
 
         }
     }
