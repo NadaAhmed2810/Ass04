@@ -33,10 +33,10 @@ namespace Ass04
             x = y;
             y = temp;
         }
-        public static int Sum(int[] arr)
+        public static int Sum(int x,params int[] arr)
         {
             int sum = 0;
-            arr=new int[] {4,5,6};
+           // arr=new int[] {4,5,6};
             for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
@@ -232,6 +232,12 @@ namespace Ass04
             //SumMul1(10, 20, ref sum, ref mul);
             //Console.WriteLine(sum);
             //Console.WriteLine(mul);
+            #endregion
+            #region Functions-params
+            //int[] a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            //Console.WriteLine(Sum(0,1, 2, 3, 4, 5, 6, 7, 8, 9));
+            //int A=10, B=11,C=12;
+            //Console.WriteLine("A :{0},B:{1},C:{2}",A,B,C);
             #endregion
 
         }
