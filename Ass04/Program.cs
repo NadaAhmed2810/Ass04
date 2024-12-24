@@ -1,4 +1,6 @@
-﻿namespace Ass04
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Ass04
 {
     internal class Program
     {
@@ -29,6 +31,36 @@
             //Console.WriteLine(x);
             ////Child =Parent 
             ////Animals ares Dogs
+            #endregion
+            #endregion
+            #region Nullable Data Type
+            #region Value type
+            //any tging accept null must check 
+            //int x =null ;// int number only
+            //int? x = null;// int Number and null
+            //Nullable<int> y = null;
+            //Console.WriteLine(x);
+            //int x = 10;
+            //int? y = x;
+            //int? x = 10;
+            //int y;
+            //if (x != null)
+            //{
+            //    y = (int)x;
+            //}
+            //else y = 0;
+            //it  take less time 
+            //if (x.HasValue)
+            //{
+            //    y = x.Value;//not casting
+            //}
+            //else y = 0;
+            //Console.WriteLine(y);
+            // y=x.HasValue ? x.Value : 0;
+            #endregion
+            #region reference type
+           // string? Name = null;//default
+            //string? Name = null!;
             #endregion
             #endregion
         }
