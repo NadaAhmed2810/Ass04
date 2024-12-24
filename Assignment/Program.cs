@@ -226,7 +226,7 @@ namespace Assignment
             //} while (!f);
             //Console.WriteLine($"New string :{ChangeChar(s, pos, c)} ");
             #endregion 
-
+            //finished
         }
     }
 }
