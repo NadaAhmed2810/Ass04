@@ -19,17 +19,38 @@ namespace Ass04
             for (int i=0;i<count;i++)
                 Console.WriteLine(pattern);
         }
-        //public static void Swap( int x,  int y)
-        //{
-        //    int temp = x;
-        //    x = y;
-        //    y = temp;
-        //}
+        public static void Swap(int x, int y)
+        {
+            int temp = x;
+            x = y;
+            y = temp;
+        }
         public static void Swap(ref int x,ref int y)
         {
             int temp = x;
             x = y;
             y = temp;
+        }
+        public static int Sum(int[] arr)
+        {
+            int sum = 0;
+            arr=new int[] {4,5,6};
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            return sum;
+        }
+        public static int Sum(ref int[] arr)
+        { 
+            
+            int sum = 0;
+            arr=new int [] {4,5,6}; ;
+            for (int i = 0; i < arr.Length; i++)
+            {
+                sum += arr[i];
+            }
+            return sum;
         }
         static void Main(string[] args)
         {
@@ -158,6 +179,36 @@ namespace Ass04
             //Console.WriteLine(y);
             #endregion
             #endregion
+            #region reference type parameters
+            #region Ex01
+            #region By value
+            // value => address 
+            //int[] arr = { 1, 2, 3 };
+            //Console.WriteLine(Sum(arr));
+            //Console.WriteLine(arr[0]);
+
+            #endregion
+            #region By reference
+            //int[] arr = { 1, 2, 3 };
+            //Console.WriteLine(Sum(ref arr));
+            //Console.WriteLine(arr[0]);
+
+            #endregion
+            #endregion
+            #region Ex02
+            #region by Value
+            //int[] arr = { 1, 2, 3 };
+            //Console.WriteLine(Sum(arr));
+            //Console.WriteLine(arr[0]);
+            #endregion
+            #region by reference
+            int[] arr = { 1, 2, 3 };
+            Console.WriteLine(Sum(ref arr));
+            Console.WriteLine(arr[0]);
+            #endregion
+            #endregion
+            #endregion
+
         }
     }
 }
